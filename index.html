@@ -1,20 +1,21 @@
 <html>
 <style>
-    .rainbow div {
-        font: 10px sans-serif;
-        text-align: left;
-        width: 200px;
-        height: 20px;
+    .rainbow,.rainbow-color {
+        width:45%;
+		display:inline-block
     }
+	.right {
+	float:right
+	}
 </style>
 <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
 <body>
 <p>The colors of the rainbow spell
     <a href="http://en.wikipedia.org/wiki/Roy_G._Biv">ROY G. BIV!</a></p>
 
-<div class="rainbow">
+<div class="rainbow" >
 </div>
-<div class="rainbow-color">
+<div class="rainbow-color right" >
 </div>
 
 
@@ -25,7 +26,7 @@
     //************************************************************
     // Configuration
     //************************************************************
-    var margin = { top: 30, right: 20, bottom: 50, left: 30, pad: 10 }
+    var margin = { top: 30, right: 200, bottom: 50, left: 30, pad: 10 }
     var width = 800 - margin.left - margin.right;
     var height = 450 - margin.top - margin.bottom;
     //************************************************************
@@ -49,7 +50,7 @@
             .transition()
             .duration(2050)
             .attr("y", function(d,i){return i*30})
-            .attr("width", 1000)
+            .attr("width", 200)
             .attr("height", 30)
             .attr("fill", function(d, i) {
               return d;
