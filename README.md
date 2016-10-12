@@ -1,2 +1,5 @@
 # d3-rainbow
-First sample project to check https://bl.ocks.org/-/about. Drawing rainbow arc with d3
+This project was created to check how bl.ocks.org linked with github. 
+You can check - http://bl.ocks.org/vshah439/7337d582a19ac7209d8966100fc8f68f.
+
+
